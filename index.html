@@ -51,8 +51,12 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero__bg">
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/video/hero-poster.jpg">
+        <source src="assets/video/hero.webm" type="video/webm" />
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__veil"></div>
       <div class="hero__gradient"></div>
-      <canvas data-waves></canvas>
     </div>
 
     <div class="hero__content">
@@ -150,10 +154,8 @@
       <div class="tech__split">
         <div class="tech__visual">
           <div class="tech__image" data-parallax>
-            <div class="tech__image-placeholder">
-              <span>[ HERO IMAGE: floating solar array on North Sea swell ]</span>
-            </div>
-            <div class="tech__badge">NS3 · 22km offshore</div>
+            <img src="assets/img/tech-installation-deck.jpg" alt="Offshore installation deck — Oceans of Energy" class="tech__img" />
+            <div class="tech__badge">Hollandse Kust Noord · 22km offshore</div>
           </div>
         </div>
 
@@ -199,9 +201,7 @@
 
         <article class="project project--lg" data-fade>
           <div class="project__media">
-            <div class="project__placeholder project__placeholder--hero">
-              <span>[ AERIAL: Hollandse Kust Noord array inside wind farm ]</span>
-            </div>
+            <img src="assets/img/hero-aerial-array-windfarm.jpg" alt="Hollandse Kust Noord — floating solar array inside Crosswind offshore wind farm" class="project__img" />
           </div>
           <div class="project__info">
             <div class="project__tag">COMMERCIAL · LIVE</div>
@@ -217,7 +217,7 @@
 
         <article class="project" data-fade>
           <div class="project__media">
-            <div class="project__placeholder"><span>[ NS2 pilot · 12km Scheveningen ]</span></div>
+            <img src="assets/img/project-ns-pilot.jpg" alt="North Sea pilot site with offshore wind turbines" class="project__img" />
           </div>
           <div class="project__info">
             <div class="project__tag">PILOT · PROVEN</div>
@@ -228,7 +228,7 @@
 
         <article class="project" data-fade>
           <div class="project__media">
-            <div class="project__placeholder"><span>[ NS3 render · scale-up ]</span></div>
+            <img src="assets/img/project-ns3-vessels.jpg" alt="Support vessels at offshore solar installation site" class="project__img" />
           </div>
           <div class="project__info">
             <div class="project__tag">IN DEVELOPMENT</div>
@@ -239,7 +239,7 @@
 
         <article class="project" data-fade>
           <div class="project__media">
-            <div class="project__placeholder"><span>[ Belgian coastal site ]</span></div>
+            <img src="assets/img/project-belgium-transit.jpg" alt="Solar array in transit through coastal lock" class="project__img" />
           </div>
           <div class="project__info">
             <div class="project__tag">INTERNATIONAL</div>
