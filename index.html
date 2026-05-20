@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oceans of Energy — Power from the Open Sea</title>
+  <meta name="description" content="Worldwide leader in offshore solar. Bankable energy from the world's most demanding seas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" data-cursor></div>
+  <div class="cursor-dot" data-cursor-dot></div>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- Loader -->
+  <div class="loader" data-loader>
+    <div class="loader__inner">
+      <div class="loader__counter"><span data-loader-count>0</span><span class="loader__pct">%</span></div>
+      <div class="loader__label">OCEANS OF ENERGY · OFFSHORE SOLAR</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__logo" data-magnetic>
+      <span class="nav__logo-mark">◉</span>
+      <span class="nav__logo-text">Oceans of Energy</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#technology" data-link>Technology</a>
+      <a href="#projects" data-link>Projects</a>
+      <a href="#impact" data-link>Impact</a>
+      <a href="#invest" data-link>Invest</a>
+      <a href="#contact" data-link>Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary nav__cta" data-magnetic>
+      <span>Get offshore solar</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5"/></svg>
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg">
+      <div class="hero__gradient"></div>
+      <canvas data-waves></canvas>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow" data-fade>
+        <span class="dot"></span> WORLDWIDE LEADER IN OFFSHORE SOLAR
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span data-split>Power</span></span>
+        <span class="line"><span data-split>from the</span> <em data-split>open sea.</em></span>
+      </h1>
+
+      <p class="hero__sub" data-fade>
+        We design, build and operate floating solar farms that survive North Sea winter storms — delivering clean, bankable energy where land has run out.
+      </p>
+
+      <div class="hero__actions" data-fade>
+        <a href="#contact" class="btn btn--primary btn--lg" data-magnetic>
+          <span>Get offshore solar now</span>
+          <svg width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="#technology" class="btn btn--ghost" data-magnetic>
+          <span class="btn__play">▶</span>
+          <span>See the system</span>
+        </a>
+      </div>
+
+      <div class="hero__meta" data-fade>
+        <div><span class="hero__meta-num">4+</span><span class="hero__meta-lbl">YEARS AT SEA</span></div>
+        <div><span class="hero__meta-num">10+</span><span class="hero__meta-lbl">NAMED STORMS SURVIVED</span></div>
+        <div><span class="hero__meta-num">13m</span><span class="hero__meta-lbl">MAX WAVE HEIGHT</span></div>
+        <div><span class="hero__meta-num">22km</span><span class="hero__meta-lbl">OFFSHORE DEPLOYED</span></div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee">
+    <div class="marquee__track" data-marquee>
+      <span>FIRST IN THE WORLD</span><span class="marquee__dot">◉</span>
+      <span>PROVEN AT SEA</span><span class="marquee__dot">◉</span>
+      <span>BANKABLE ENERGY</span><span class="marquee__dot">◉</span>
+      <span>NORTH SEA TESTED</span><span class="marquee__dot">◉</span>
+      <span>FIRST IN THE WORLD</span><span class="marquee__dot">◉</span>
+      <span>PROVEN AT SEA</span><span class="marquee__dot">◉</span>
+      <span>BANKABLE ENERGY</span><span class="marquee__dot">◉</span>
+      <span>NORTH SEA TESTED</span><span class="marquee__dot">◉</span>
+    </div>
+  </section>
+
+  <!-- THE TENSION (StoryBrand: problem) -->
+  <section class="tension" id="tension">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow" data-fade>THE ENERGY GAP</span>
+        <h2 class="section__title" data-reveal>
+          Land is finite. <br />
+          <em>The sun never sets on the ocean.</em>
+        </h2>
+      </div>
+
+      <div class="tension__grid">
+        <div class="tension__card" data-fade>
+          <div class="tension__num">71%</div>
+          <p>of our planet is covered in water. Offshore solar unlocks the world's largest untapped surface area.</p>
+        </div>
+        <div class="tension__card" data-fade>
+          <div class="tension__num">50%</div>
+          <p>of the global population lives within 100km of a coast — exactly where demand for clean power is highest.</p>
+        </div>
+        <div class="tension__card" data-fade>
+          <div class="tension__num">∞</div>
+          <p>The next gigawatt of offshore wind needs more than wind. Co-located solar lifts yield per square kilometer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="tech" id="technology">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow" data-fade>THE TECHNOLOGY</span>
+        <h2 class="section__title" data-reveal>
+          A system that <em>rides the wave</em>,<br />
+          instead of fighting it.
+        </h2>
+      </div>
+
+      <div class="tech__split">
+        <div class="tech__visual">
+          <div class="tech__image" data-parallax>
+            <div class="tech__image-placeholder">
+              <span>[ HERO IMAGE: floating solar array on North Sea swell ]</span>
+            </div>
+            <div class="tech__badge">NS3 · 22km offshore</div>
+          </div>
+        </div>
+
+        <div class="tech__steps">
+          <div class="step" data-step>
+            <div class="step__num">01</div>
+            <div class="step__body">
+              <h3>Water-surface coupled</h3>
+              <p>Panels float in harmony with the sea, flexing with each swell — eliminating the rigid stress that breaks conventional structures.</p>
+            </div>
+          </div>
+          <div class="step" data-step>
+            <div class="step__num">02</div>
+            <div class="step__body">
+              <h3>Modular & scalable</h3>
+              <p>Standard components fabricated in Sassenheim. Designed to scale from pilot to gigawatt-class arrays.</p>
+            </div>
+          </div>
+          <div class="step" data-step>
+            <div class="step__num">03</div>
+            <div class="step__body">
+              <h3>Battle-tested</h3>
+              <p>4+ years of continuous operation 12km off Scheveningen — through 10+ named storms and 13m waves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section__head section__head--row">
+        <div>
+          <span class="eyebrow" data-fade>SELECTED PROJECTS</span>
+          <h2 class="section__title" data-reveal>From pilot <em>to portfolio.</em></h2>
+        </div>
+        <a href="#" class="link link--arrow" data-magnetic>All projects →</a>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project project--lg" data-fade>
+          <div class="project__media">
+            <div class="project__placeholder project__placeholder--hero">
+              <span>[ AERIAL: Hollandse Kust Noord array inside wind farm ]</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__tag">COMMERCIAL · LIVE</div>
+            <h3>Hollandse Kust Noord 1</h3>
+            <p>First commercial offshore solar farm — co-located inside Crosswind's 22km offshore wind park.</p>
+            <div class="project__stats">
+              <div><span>2025</span><small>INSTALLED</small></div>
+              <div><span>22km</span><small>OFFSHORE</small></div>
+              <div><span>1st</span><small>WORLD-WIDE</small></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-fade>
+          <div class="project__media">
+            <div class="project__placeholder"><span>[ NS2 pilot · 12km Scheveningen ]</span></div>
+          </div>
+          <div class="project__info">
+            <div class="project__tag">PILOT · PROVEN</div>
+            <h3>North Sea 1 & 2</h3>
+            <p>The world's first megawatt-scale offshore solar pilots — proving survivability through 4+ winter seasons.</p>
+          </div>
+        </article>
+
+        <article class="project" data-fade>
+          <div class="project__media">
+            <div class="project__placeholder"><span>[ NS3 render · scale-up ]</span></div>
+          </div>
+          <div class="project__info">
+            <div class="project__tag">IN DEVELOPMENT</div>
+            <h3>North Sea 3</h3>
+            <p>Twentyfold scale-up. Engineering complete, permitting in progress for next-generation deployment.</p>
+          </div>
+        </article>
+
+        <article class="project" data-fade>
+          <div class="project__media">
+            <div class="project__placeholder"><span>[ Belgian coastal site ]</span></div>
+          </div>
+          <div class="project__info">
+            <div class="project__tag">INTERNATIONAL</div>
+            <h3>Belgian North Sea</h3>
+            <p>Expanding the platform across European waters — replicable, bankable, ready for export.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="caps" id="capabilities">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow" data-fade>END-TO-END CAPABILITIES</span>
+        <h2 class="section__title" data-reveal>
+          One partner. <br />
+          <em>From feasibility to first watt — and beyond.</em>
+        </h2>
+      </div>
+
+      <div class="caps__grid">
+        <div class="cap" data-fade>
+          <div class="cap__icon">◉</div>
+          <h4>Consultancy</h4>
+          <p>Feasibility studies, site assessment, detailed engineering support.</p>
+        </div>
+        <div class="cap" data-fade>
+          <div class="cap__icon">▤</div>
+          <h4>Fabrication</h4>
+          <p>Standard components produced at our Sassenheim facility — proven, repeatable, fast.</p>
+        </div>
+        <div class="cap" data-fade>
+          <div class="cap__icon">▲</div>
+          <h4>EPCI</h4>
+          <p>Full engineering, procurement, construction & installation under one roof.</p>
+        </div>
+        <div class="cap" data-fade>
+          <div class="cap__icon">◐</div>
+          <h4>O&M</h4>
+          <p>Maintenance and operations support across the full asset lifecycle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="impact" id="impact">
+    <div class="container">
+      <div class="impact__inner">
+        <div class="impact__lead">
+          <span class="eyebrow" data-fade>IN HARMONY WITH NATURE</span>
+          <h2 class="section__title" data-reveal>
+            Every panel placed with <em>the ocean in mind.</em>
+          </h2>
+          <p class="impact__copy" data-fade>
+            Our system is independently monitored for biodiversity, light penetration and marine impact — because the future of energy and the health of the ocean are not separate questions.
+          </p>
+        </div>
+
+        <div class="impact__numbers">
+          <div data-counter data-target="365"><span class="num"></span><small>Days/year operation</small></div>
+          <div data-counter data-target="24"><span class="num"></span><small>Hours wave action</small></div>
+          <div data-counter data-target="100"><span class="num"></span><small>% bankable design</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVEST CTA -->
+  <section class="invest" id="invest">
+    <div class="container">
+      <div class="invest__card">
+        <div class="invest__bg"></div>
+        <div class="invest__content">
+          <span class="eyebrow" data-fade>FOR INVESTORS & DEVELOPERS</span>
+          <h2 class="invest__title" data-reveal>
+            The next gigawatt is <em>on the water.</em>
+          </h2>
+          <p data-fade>Join the offshore solar revolution. Co-locate with wind. Scale with confidence. Build the bankable asset class of the next decade.</p>
+          <div class="invest__actions" data-fade>
+            <a href="#contact" class="btn btn--primary btn--lg" data-magnetic>
+              <span>Talk to our team</span>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <a href="#" class="btn btn--ghost btn--lg" data-magnetic><span>Download investor deck</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__top">
+        <h2 class="footer__big" data-reveal>
+          Let's put <em>the sun</em><br />to work at sea.
+        </h2>
+        <a href="mailto:offshore.solar@oceansofenergy.blue" class="footer__email" data-magnetic>
+          offshore.solar@oceansofenergy.blue →
+        </a>
+      </div>
+
+      <div class="footer__grid">
+        <div>
+          <div class="footer__label">VISIT</div>
+          <p>Sassenheim<br/>The Netherlands</p>
+        </div>
+        <div>
+          <div class="footer__label">CALL</div>
+          <p>+31 (0)85 0090631</p>
+        </div>
+        <div>
+          <div class="footer__label">FOLLOW</div>
+          <p>LinkedIn · YouTube · Press</p>
+        </div>
+        <div>
+          <div class="footer__label">EXPLORE</div>
+          <p>Technology · Projects · Careers · Invest</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__logo">◉ Oceans of Energy</div>
+        <div class="footer__credit">Wireframe concept by <a href="https://sircle.agency" target="_blank">Sircle Agency</a> — every brand has a story worth telling.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
