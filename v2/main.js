@@ -93,10 +93,9 @@ function playHero() {
   })
   .from('.hero__eyebrow', { y: 20, opacity: 0, duration: 0.8 }, '-=1')
   .from('.hero__sub', { y: 24, opacity: 0, duration: 0.8 }, '-=0.8')
-  .from('.hero__actions > *', { y: 20, opacity: 0, duration: 0.7, stagger: 0.08 }, '-=0.6')
-  .from('.hero__meta > div', { y: 20, opacity: 0, duration: 0.7, stagger: 0.07 }, '-=0.5')
-  .from('.nav', { y: -30, opacity: 0, duration: 0.6 }, '-=1');
+  .from('.hero__actions > *', { y: 20, opacity: 0, duration: 0.7, stagger: 0.08 }, '-=0.6');
 }
+
 
 /* ---------- Hero waves canvas ---------- */
 const canvas = document.querySelector('[data-waves]');

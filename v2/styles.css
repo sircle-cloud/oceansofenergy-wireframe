@@ -115,13 +115,15 @@ img, video { display: block; max-width: 100%; }
   border-color: var(--line);
 }
 .nav__logo {
-  display: flex; align-items: center; gap: 10px;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: -0.01em;
+  display: flex; align-items: center;
+  height: 48px;
 }
-.nav__logo-mark { color: var(--accent); font-size: 16px; }
+.nav__logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.4));
+}
 .nav__links {
   display: flex; gap: 36px;
   font-family: var(--font-display);
@@ -772,7 +774,7 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
   flex-wrap: wrap;
   gap: 16px;
 }
-.footer__logo { color: var(--ink); font-weight: 600; }
+.footer__logo img { height: 32px; width: auto; display: block; opacity: 0.95; }
 .footer__credit a { color: var(--accent); }
 
 @media (max-width: 880px) { .footer__grid { grid-template-columns: repeat(2, 1fr); } }
